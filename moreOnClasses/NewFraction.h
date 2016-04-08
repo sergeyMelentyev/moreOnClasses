@@ -1,0 +1,23 @@
+//
+//  NewFraction.h
+//  moreOnClasses
+//
+//  Created by Админ on 08.04.16.
+//  Copyright © 2016 Melentyev. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NewFraction : NSObject
+
+// SYNTHESIZE ACCESSOR METHODS
+@property int numerator;
+@property int denominator;
+
+// INSTANCE METHODS
+- (void) print;
+- (double) convertToNum;
+- (void) setNumerator:(int)numerator overDenominator:(int)denominator;
+- (void) addTwoFractions:(NewFraction*)f;
+
+@end

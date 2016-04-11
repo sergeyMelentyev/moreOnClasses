@@ -12,6 +12,8 @@
 		803FAB9E1CB7F84100E069CF /* NewFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FAB9D1CB7F84100E069CF /* NewFraction.m */; };
 		803FABA11CBB9CF700E069CF /* SubFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FABA01CBB9CF700E069CF /* SubFraction.m */; };
 		803FABA41CBBA2B400E069CF /* SubNewFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FABA31CBBA2B400E069CF /* SubNewFraction.m */; };
+		803FABA71CBBA6A500E069CF /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FABA61CBBA6A500E069CF /* XYPoint.m */; };
+		803FABAA1CBBA73C00E069CF /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FABA91CBBA73C00E069CF /* Rectangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		803FABA01CBB9CF700E069CF /* SubFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubFraction.m; sourceTree = "<group>"; };
 		803FABA21CBBA2B400E069CF /* SubNewFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubNewFraction.h; sourceTree = "<group>"; };
 		803FABA31CBBA2B400E069CF /* SubNewFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubNewFraction.m; sourceTree = "<group>"; };
+		803FABA51CBBA6A500E069CF /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
+		803FABA61CBBA6A500E069CF /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
+		803FABA81CBBA73C00E069CF /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		803FABA91CBBA73C00E069CF /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,10 @@
 				803FABA01CBB9CF700E069CF /* SubFraction.m */,
 				803FABA21CBBA2B400E069CF /* SubNewFraction.h */,
 				803FABA31CBBA2B400E069CF /* SubNewFraction.m */,
+				803FABA51CBBA6A500E069CF /* XYPoint.h */,
+				803FABA61CBBA6A500E069CF /* XYPoint.m */,
+				803FABA81CBBA73C00E069CF /* Rectangle.h */,
+				803FABA91CBBA73C00E069CF /* Rectangle.m */,
 			);
 			path = moreOnClasses;
 			sourceTree = "<group>";
@@ -139,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				803FABA41CBBA2B400E069CF /* SubNewFraction.m in Sources */,
+				803FABAA1CBBA73C00E069CF /* Rectangle.m in Sources */,
+				803FABA71CBBA6A500E069CF /* XYPoint.m in Sources */,
 				803FABA11CBB9CF700E069CF /* SubFraction.m in Sources */,
 				803FAB931CB7F80000E069CF /* main.m in Sources */,
 				803FAB9E1CB7F84100E069CF /* NewFraction.m in Sources */,

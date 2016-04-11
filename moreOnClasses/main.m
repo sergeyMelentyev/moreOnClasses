@@ -11,6 +11,8 @@
 #import "NewFraction.h"
 #import "SubFraction.h"
 #import "SubNewFraction.h"
+#import "XYPoint.h"
+#import "Rectangle.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -54,6 +56,9 @@ int main(int argc, const char * argv[]) {
         SubNewFraction *inheretedMethodFraction = [[SubNewFraction alloc] init];
         [inheretedMethodFraction setInheritedValue:1];
         NSLog(@"Inhereted Method: %i", [inheretedMethodFraction inheritedValue]);
+        
+        //
+        
     }
     return 0;
 }

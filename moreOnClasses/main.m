@@ -57,8 +57,14 @@ int main(int argc, const char * argv[]) {
         [inheretedMethodFraction setInheritedValue:1];
         NSLog(@"Inhereted Method: %i", [inheretedMethodFraction inheritedValue]);
         
-        //
-        
+        Rectangle *myRect = [[Rectangle alloc] init];
+        XYPoint *myPoint = [[XYPoint alloc] init];
+        [myRect setWidth:5 andHeight:8];
+        [myPoint setX:100 setY:100];
+        myRect.origin = myPoint;
+        NSLog(@"Rectangle w = %i, h = %i", myRect.width, myRect.height);
+        NSLog(@"Origin at (%i, %i)", myRect.origin.x, myRect.origin.y);
+        NSLog(@"Area = %i, Perimeter = %i", [myRect area], [myRect perimeter]);
     }
     return 0;
 }

@@ -7,20 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XYPoint.h"
-// USE DIRECTIVE @CLASS FOR LIGHT IMPORT
+@class XYPoint;
 
 @interface Rectangle : NSObject
 
 @property int width;
 @property int height;
+@property XYPoint *origin;
 
 - (void) setWidth: (int) w andHeight: (int) h;
 - (int) area;
 - (int) perimeter;
-
-// MANUAL SETTER AND GETTER METHODS
-- (XYPoint *) origin;
-- (void) setOrigin: (XYPoint *) pt;
 
 @end

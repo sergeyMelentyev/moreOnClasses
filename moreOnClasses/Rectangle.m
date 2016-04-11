@@ -8,10 +8,7 @@
 
 #import "Rectangle.h"
 
-@implementation Rectangle {
-    // DECLARE A LOCAL INSTANCE VARIABLE
-    XYPoint *origin;
-}
+@implementation Rectangle
 
 - (void) setWidth: (int) w andHeight: (int) h {
     self.width = w;
@@ -22,14 +19,6 @@
 }
 - (int) perimeter {
     return (self.width + self.height) * 2;
-}
-
-// SETTER AND GETTER METHODS
-- (XYPoint *) origin {
-    return origin;
-}
-- (void) setOrigin: (XYPoint *) pt {
-    origin = pt;
 }
 
 @end

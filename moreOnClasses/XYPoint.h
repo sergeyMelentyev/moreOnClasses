@@ -14,7 +14,7 @@
 @property int x;
 @property int y;
 
-// DEFINE AN EXTERNAL INSTANCE METHODS
+// DEFINE AN EXTERNAL INSTANCE METHOD
 - (void) setX: (int) xVal setY: (int) yVal;
 
 @end

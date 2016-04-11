@@ -10,6 +10,7 @@
 #import "Fraction.h"
 #import "NewFraction.h"
 #import "SubFraction.h"
+#import "SubNewFraction.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -43,11 +44,24 @@ int main(int argc, const char * argv[]) {
         double sum = cFraction.convertToNum;
         NSLog(@"%f + %f = %f", c, d, sum);
         
-        // INHERITANCE
+        // INHERITANCE BY VALUE
         SubFraction *inheritedFraction = [[SubFraction alloc] init];
         [inheritedFraction setNumerator:1];
         [inheritedFraction setDenominator:2];
         [inheritedFraction printInheritedVar];
+        
+        // INHERITANCE BY METHOD
+        SubNewFraction *inheretedMethodFraction = [[SubNewFraction alloc] init];
+        [inheretedMethodFraction setInheritedValue:1];
+        NSLog(@"Inhereted Method: %i", [inheretedMethodFraction inheritedValue]);
     }
     return 0;
 }
+
+
+
+
+
+
+
+

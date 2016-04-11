@@ -9,7 +9,9 @@
 #import "SubFraction.h"
 
 @implementation SubFraction
+
 - (void) printInheritedVar {
     NSLog(@"Inherited: %i / %i", self.numerator, self.denominator);
 }
+
 @end

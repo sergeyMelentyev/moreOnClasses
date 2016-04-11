@@ -11,6 +11,7 @@
 		803FAB9B1CB7F83100E069CF /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FAB9A1CB7F83100E069CF /* Fraction.m */; };
 		803FAB9E1CB7F84100E069CF /* NewFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FAB9D1CB7F84100E069CF /* NewFraction.m */; };
 		803FABA11CBB9CF700E069CF /* SubFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FABA01CBB9CF700E069CF /* SubFraction.m */; };
+		803FABA41CBBA2B400E069CF /* SubNewFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FABA31CBBA2B400E069CF /* SubNewFraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		803FAB9D1CB7F84100E069CF /* NewFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFraction.m; sourceTree = "<group>"; };
 		803FAB9F1CBB9CF700E069CF /* SubFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubFraction.h; sourceTree = "<group>"; };
 		803FABA01CBB9CF700E069CF /* SubFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubFraction.m; sourceTree = "<group>"; };
+		803FABA21CBBA2B400E069CF /* SubNewFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubNewFraction.h; sourceTree = "<group>"; };
+		803FABA31CBBA2B400E069CF /* SubNewFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubNewFraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				803FAB9D1CB7F84100E069CF /* NewFraction.m */,
 				803FAB9F1CBB9CF700E069CF /* SubFraction.h */,
 				803FABA01CBB9CF700E069CF /* SubFraction.m */,
+				803FABA21CBBA2B400E069CF /* SubNewFraction.h */,
+				803FABA31CBBA2B400E069CF /* SubNewFraction.m */,
 			);
 			path = moreOnClasses;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803FABA41CBBA2B400E069CF /* SubNewFraction.m in Sources */,
 				803FABA11CBB9CF700E069CF /* SubFraction.m in Sources */,
 				803FAB931CB7F80000E069CF /* main.m in Sources */,
 				803FAB9E1CB7F84100E069CF /* NewFraction.m in Sources */,

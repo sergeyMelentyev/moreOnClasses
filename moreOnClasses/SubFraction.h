@@ -10,5 +10,7 @@
 
 // INHERITANCE
 @interface SubFraction : Fraction
+
 - (void) printInheritedVar;
+
 @end

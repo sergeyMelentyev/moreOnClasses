@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Fraction : NSObject
+@interface Fraction : NSObject {
+// EXTERNAL VARIABLES
+    int numerator;
+    int denominator;
+}
 
 // MAUAL SETTERS AND GETTERS
 - (void) setNumerator: (int) n;

@@ -10,6 +10,7 @@
 		803FAB931CB7F80000E069CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FAB921CB7F80000E069CF /* main.m */; };
 		803FAB9B1CB7F83100E069CF /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FAB9A1CB7F83100E069CF /* Fraction.m */; };
 		803FAB9E1CB7F84100E069CF /* NewFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FAB9D1CB7F84100E069CF /* NewFraction.m */; };
+		803FABA11CBB9CF700E069CF /* SubFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 803FABA01CBB9CF700E069CF /* SubFraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		803FAB9A1CB7F83100E069CF /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		803FAB9C1CB7F84100E069CF /* NewFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFraction.h; sourceTree = "<group>"; };
 		803FAB9D1CB7F84100E069CF /* NewFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFraction.m; sourceTree = "<group>"; };
+		803FAB9F1CBB9CF700E069CF /* SubFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubFraction.h; sourceTree = "<group>"; };
+		803FABA01CBB9CF700E069CF /* SubFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubFraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				803FAB9A1CB7F83100E069CF /* Fraction.m */,
 				803FAB9C1CB7F84100E069CF /* NewFraction.h */,
 				803FAB9D1CB7F84100E069CF /* NewFraction.m */,
+				803FAB9F1CBB9CF700E069CF /* SubFraction.h */,
+				803FABA01CBB9CF700E069CF /* SubFraction.m */,
 			);
 			path = moreOnClasses;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803FABA11CBB9CF700E069CF /* SubFraction.m in Sources */,
 				803FAB931CB7F80000E069CF /* main.m in Sources */,
 				803FAB9E1CB7F84100E069CF /* NewFraction.m in Sources */,
 				803FAB9B1CB7F83100E069CF /* Fraction.m in Sources */,
@@ -251,6 +257,7 @@
 				803FAB981CB7F80000E069CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

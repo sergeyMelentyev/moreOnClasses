@@ -9,8 +9,7 @@
 #import "Fraction.h"
 
 @implementation Fraction {
-    int numerator;
-    int denominator;
+// LOCAL VARIABLES
 }
 
 // MANUAL SETTERS AND GETTERS

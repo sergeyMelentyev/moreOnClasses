@@ -37,6 +37,12 @@
     self.denominator = self.denominator * f.denominator;
 }
 
+// OVERRIDE GLOBAL/EXTERNAL VARIABLE
+- (void) setgExternVar: (int) val {
+    extern int gExternVar;
+    gExternVar = val;
+}
+
 @end
 
 

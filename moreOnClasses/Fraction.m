@@ -8,6 +8,9 @@
 
 #import "Fraction.h"
 
+// DECLARE GLOBAL VARIABLE
+static int classCounter;
+
 @implementation Fraction {
 // LOCAL VARIABLES
 }
@@ -50,10 +53,26 @@
     return result;
 }
 
-// OVERRIDE GLOBAL VARIABLE
-- (void) setgGlobalVar: (int) val {
-    extern int gGlobalVar;
-    gGlobalVar = val;
+// OVERRIDE GLOBAL/EXTERNAL VARIABLE
+- (void) setgExternVar: (int) val {
+    extern int gExternVar;
+    gExternVar = val;
+}
+
+// CLASS METHODS;
++ (Fraction *) allocWithCounter {
+    extern int classCounter;
+    ++classCounter;
+    return [Fraction alloc];
+}
++ (int) count {
+    extern int classCounter;
+    return classCounter;
 }
 
 @end
+
+
+
+
+

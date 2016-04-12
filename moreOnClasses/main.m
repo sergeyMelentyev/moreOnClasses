@@ -14,8 +14,10 @@
 #import "XYPoint.h"
 #import "Rectangle.h"
 
-// DECLARE A GLOBAL VARIABLE
-int gGlobalVar = 0;
+// DECLARE A GLOBAL/EXTERNAL VARIABLE
+int gExternVar = 0;
+// DECLARE A GLOBAL/NOTEXTERNAL VARIABLE
+static int gGlobalVar = 0;
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -24,11 +26,12 @@ int main(int argc, const char * argv[]) {
         @try {
             [aFraction setNumerator:1];
             [aFraction setDenominator:4];
-            [aFraction setgGlobalVar:10];
+            [aFraction setgExternVar:10];
         } @catch (NSException *exception) {
             NSLog(@"ERROR %@ %@", exception.name, exception.reason);
         }
-        NSLog(@"Global variable = %i", gGlobalVar);
+        NSLog(@"Global/External variable = %i", gExternVar);
+        NSLog(@"Global/NotExternal variable = %i", gGlobalVar);
         Fraction *bFraction = [[Fraction alloc] init];
         [bFraction setNumerator:1];
         [bFraction setDenominator:2];
@@ -39,6 +42,12 @@ int main(int argc, const char * argv[]) {
         NSLog(@"=");
         resultFraction = [aFraction add:bFraction];
         [resultFraction print];
+        
+        // CLASS METHOD AND ACCESS TO STATIC VARIABLE
+        Fraction *xFraction, *yFraction;
+        xFraction = [[Fraction allocWithCounter] init];
+        yFraction = [[Fraction allocWithCounter] init];
+        NSLog(@"Static class counter = %i", [Fraction count]);
         
         // SYNTHESIZED ACCESSOR METHODS; ADD TWO OBJECTS ADD OVERRIDE RESULT TO THE FIRST
         NewFraction *cFraction = [[NewFraction alloc] init];
@@ -53,6 +62,8 @@ int main(int argc, const char * argv[]) {
         // CUSTOM INITIALIZER
         NewFraction *initFraction = [[NewFraction alloc] initWith:7 over:14];
         NSLog(@"Custom init: %i / %i", initFraction.numerator, initFraction.denominator);
+        [initFraction setgExternVar:5];
+        NSLog(@"Global/External variable = %i", gExternVar);
         
         // PASS AN OBJECT AS AN ARGUMENT
         [cFraction addTwoFractions:dFraction];

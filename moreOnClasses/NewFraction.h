@@ -23,4 +23,7 @@
 - (void) setNumerator:(int)numerator overDenominator:(int)denominator;
 - (void) addTwoFractions:(NewFraction*)f;
 
+// OVERRIDE GLOBAL/EXTERNAL VARIABLE
+- (void) setgExternVar: (int) val;
+
 @end

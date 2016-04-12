@@ -14,12 +14,21 @@
 #import "XYPoint.h"
 #import "Rectangle.h"
 
+// DECLARE A GLOBAL VARIABLE
+int gGlobalVar = 0;
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // MANUAL SETTERS AND GETTERS; ADD TWO OBJECTS AND SAVE TO THE THIRD
         Fraction *aFraction = [[Fraction alloc] init];
-        [aFraction setNumerator:1];
-        [aFraction setDenominator:4];
+        @try {
+            [aFraction setNumerator:1];
+            [aFraction setDenominator:4];
+            [aFraction setgGlobalVar:10];
+        } @catch (NSException *exception) {
+            NSLog(@"ERROR %@ %@", exception.name, exception.reason);
+        }
+        NSLog(@"Global variable = %i", gGlobalVar);
         Fraction *bFraction = [[Fraction alloc] init];
         [bFraction setNumerator:1];
         [bFraction setDenominator:2];
@@ -41,6 +50,10 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%i / %i", cFraction.numerator, cFraction.denominator);
         NSLog(@"%i / %i", dFraction.numerator, dFraction.denominator);
         
+        // CUSTOM INITIALIZER
+        NewFraction *initFraction = [[NewFraction alloc] initWith:7 over:14];
+        NSLog(@"Custom init: %i / %i", initFraction.numerator, initFraction.denominator);
+        
         // PASS AN OBJECT AS AN ARGUMENT
         [cFraction addTwoFractions:dFraction];
         double sum = cFraction.convertToNum;
@@ -60,11 +73,14 @@ int main(int argc, const char * argv[]) {
         Rectangle *myRect = [[Rectangle alloc] init];
         XYPoint *myPoint = [[XYPoint alloc] init];
         [myRect setWidth:5 andHeight:8];
-        [myPoint setX:100 setY:100];
+        [myPoint setX:100 setY:200];
         myRect.origin = myPoint;
         NSLog(@"Rectangle w = %i, h = %i", myRect.width, myRect.height);
         NSLog(@"Origin at (%i, %i)", myRect.origin.x, myRect.origin.y);
         NSLog(@"Area = %i, Perimeter = %i", [myRect area], [myRect perimeter]);
+        
+        // POLYMORPHISM = DIFFERENT CLASSES CONTAIN THE SAME METHODS
+        
     }
     return 0;
 }

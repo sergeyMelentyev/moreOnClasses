@@ -10,6 +10,14 @@
 
 @implementation NewFraction
 
+// CUSTOM CLASS INITIALIZER
+- (instancetype) initWith: (int) n over: (int) d {
+    self = [super init];
+    if (self)
+        [self setNumerator:n overDenominator:d];
+    return self;
+}
+
 // INSTANCE METHODS
 - (void) print {
     NSLog(@"%i/%i", self.numerator, self.denominator);
@@ -30,3 +38,7 @@
 }
 
 @end
+
+
+
+

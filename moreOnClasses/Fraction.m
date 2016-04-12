@@ -50,4 +50,10 @@
     return result;
 }
 
+// OVERRIDE GLOBAL VARIABLE
+- (void) setgGlobalVar: (int) val {
+    extern int gGlobalVar;
+    gGlobalVar = val;
+}
+
 @end

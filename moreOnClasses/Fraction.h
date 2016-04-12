@@ -25,4 +25,7 @@
 - (void) reduce;
 - (Fraction*) add:(Fraction*)f;
 
+// OVERRIDE GLOBAL VARIABLE
+- (void) setgGlobalVar: (int) val;
+
 @end

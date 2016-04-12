@@ -10,6 +10,9 @@
 
 @interface NewFraction : NSObject
 
+// CUSTOM CLASS INITIALIZER
+- (instancetype) initWith: (int) n over: (int) d;
+
 // SYNTHESIZE ACCESSOR METHODS
 @property int numerator;
 @property int denominator;
